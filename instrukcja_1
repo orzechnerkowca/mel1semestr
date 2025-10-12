@@ -1,0 +1,30 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>               // Dolaczenie biblioteki z funkcjami wejscia/wyjscia
+#include <math.h>                // Dolaczenie biblioteki z funkcjami matematycznymi
+#include "winbgi2.h"             // Dolaczenie biblioteki graficznej
+
+void main() {
+	//graphics(200,200);						//kwadrat
+	//line(50,50,150,50);
+	//line(50,50,50,150);
+	//line(50,150,150,150);
+	//line(150,50,150,150);
+	//wait();
+
+	//graphics(200, 200);						//ludzik
+	//circle(100, 50, 25);
+	//line(100,75,100,125);
+	//line(100,125,150,175);
+	//line(100,75,150,125);
+	//line(100,125,50,175);
+	//line(100,75,50,125);
+	//wait();
+
+	//graphics(200, 200);						//koła olimpijskie
+	//circle(30,100,25);
+	//circle(90, 100, 25);
+	//circle(150, 100, 25);
+	//circle(60, 125, 25);
+	//circle(120, 125, 25);
+	//wait();
+}
