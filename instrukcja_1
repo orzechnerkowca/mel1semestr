@@ -27,4 +27,29 @@ void main() {
 	//circle(60, 125, 25);
 	//circle(120, 125, 25);
 	//wait();
+
+	//float x = 500;							//koło na środku
+	//float y = 400;
+	//float s = 50;
+	//graphics(x, y);
+	//circle(x/2,y/2,s);
+	//wait();
+
+	//graphics(500,500);						//4 koła pod sobą w prawym górnym rogu
+	//int d = 50;
+	//circle(25,25,d/2);
+	//circle(25, 25+d, d / 2);
+	//circle(25, 25+2*d, d / 2);
+	//circle(25, 25+3*d, d / 2);
+	//wait();
+
+	//graphics(500, 500);						//koła olimpijskie o zmiennej odległości od górnej krawędzi
+	//int y;
+	//scanf("%d" , & y);
+	//circle(30,y,25);
+	//circle(90, y, 25);
+	//circle(150, y, 25);
+	//circle(60, y+25, 25);
+	//circle(120, y+25, 25);
+	//wait();
 }
