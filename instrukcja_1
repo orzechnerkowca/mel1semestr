@@ -52,4 +52,42 @@ void main() {
 	//circle(60, y+25, 25);
 	//circle(120, y+25, 25);
 	//wait();
+
+	//graphics(200,200);						//kratka z odstępem w
+	//int w,x;
+	//x = 0;
+	//w = 20;
+	//while (x < 200) {
+	//	line(x, 10, x, 190);
+	//	line(0, x+10, 190, x+10);
+	//	x = x + w;
+	//}
+	//wait();
+
+	//graphics(500,500);							//siatka z kółek o promieniu r
+	//int r = 50;
+	//int x = r;
+	//int y = r;
+	//while (y <= 500 - r) {
+	//	while (x <= 500 - r) {
+	//		circle(x, y, r);
+	//		x = x + 2 * r;
+	//	}
+	//	y = y + 2 * r;
+	//	x = r;
+	//}
+	//wait();
+
+	//graphics(1500, 1000);							//ciąg kół o promieniach 1/n
+	//int x, y, r, n;
+	//r = 150;
+	//x = r;
+	//y = 500;
+	//n = 1;
+	//while (x <= 1500){
+	//	circle(x,y,r/n);
+	//	x = x + 2 * r/n;
+	//	n = n + 1;
+	//}
+	//wait();
 }
