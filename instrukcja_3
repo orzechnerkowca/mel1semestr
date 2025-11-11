@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <math.h>
+
+//void kalkulator();
+
+int main() {
+																		//Używając pojedynczej funkcji printf() oraz odpowiednich kodów sterujących, wygeneruj tekst identyczny z poniższym
+//printf("To jest pierwsze zdanie w mojej instrukcji.\n\
+To jest tuz po znaku nowej linii.\t\
+Zas ten fragment\n\t\t\t\t\toddzielony jest znakiem\n\t\t\t\t\ttabulacji!\n\
+W ponizszej linii wszystkie liczby oddzielono tabulatorami:\n5.2\t3.14\t-7\t8");
+
+																		//Dopisz do swojego programu instrukcję, która wydrukuje następujący tekst
+	//printf("82%% dysku C:\\ jest w uzyciu!");					
+
+																		//specyfikatory formatu
+	/* % .2lf dla double - zostawia 2 miejsca po przecinku i zaokrągla						
+	%.4lf dla double - zostawia 4 miejsca po przecinku i zaokrągla
+	%e dla double - zapisuje w notacji wykładniczej
+	%.3lf dla float - zostawia 3 miejsca po przecinku i zaokrągla
+	%lg dla double - wybiera automatycznie czy wypisać w postaci dziesiętnej czy wykładniczej żeby było zwięźlej*/
+
+	//kalkulator();
+
+																		//wczytywanie a do b oraz c za pomocą wskaźników
+	/*double a, b, c;
+	scanf_s("%lf", &a);
+	double *wsk_b = &b;
+	double *wsk_c = &c;
+	*wsk_b = a;
+	*wsk_c = a;
+	printf("%lf %lf %lf", a, *wsk_b, *wsk_c);*/	
+}
+
+
+/*void kalkulator() {													//Napisz prosty kalkulator dla dwóch liczb
+	double a, b;
+	scanf_s("%lf %lf", &a, &b);
+	double suma = a + b;
+	double mnozenie = a * b;
+	double odejmowanieAB = a - b;
+	double odejmowanieBA = b - a;
+	double dzielenieAB = a / b;
+	double dzielenieBA = b / a;
+	printf("\nsuma: %lf \nmnozenie: %lf \nodejmowanieAB: %lf \nodejmowanieBA: %lf \ndzielenieAB: %lf \ndzielenieBA: %lf", suma, mnozenie, odejmowanieAB, odejmowanieBA, dzielenieAB, dzielenieBA);
+}*/
