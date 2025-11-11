@@ -1,0 +1,94 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include <time.h>
+#include "winbgi2.h"
+
+//double isInCircle();
+double czywkole(void);
+double montecarlo(void);
+
+
+int main()
+{  
+    srand((unsigned int)time(NULL));
+
+    montecarlo();
+    return 0;
+    
+                                                //1000 losowych liczb od 1 do 8 zliczonych ile razy wypadły
+    /*int liczby[] = {0,0,0,0,0,0,0,0};
+    for (int i = 0; i < 1000; i++) {
+        int liczba = rand() % 8 + 1;
+        liczby[liczba - 1]++;
+    }
+
+    for (int i = 0; i < 8; i++) {
+        printf("\n%d", liczby[i]);
+    }
+
+    return 0;*/
+
+    /*graphics(500, 500);
+    rectangle(0, 0, 500, 500);
+    circle(0, 0, 500);
+    for (int j = 0; j < 300; j++) {
+        isInCircle();
+    }
+    
+    wait();*/
+
+    
+}
+                
+  /*double isInCircle() {                         //sprawdzanie czy punkt znajduje się w kole i rysowanie kółek i plusów
+    double x;
+    double y;
+    
+
+    // wyrazenie (double), rzutuje typ na double
+    x = (double)rand() / RAND_MAX * 500;
+    y = (double)rand() / RAND_MAX * 500;
+
+    if (x * x + y * y <= 500*500) {
+        circle(x, y, 5);
+        return 1;
+        
+    }
+    else {
+        line(x - 5, y, x + 5, y);
+        line(x, y - 5, x, y + 5);
+        return 0;
+        
+    }
+}*/
+
+  double czywkole() {
+      double x = (double)rand() / RAND_MAX;
+      double y = (double)rand() / RAND_MAX;
+
+      if ((x * x + y * y) <= 1) {
+          return 1.0;
+      }
+      else return 0.0;
+}
+
+double montecarlo() {
+    double pom;
+    int wkole = 0;
+    long long N = 200000000;
+    
+
+    for (int k = 0; k < N; k++) {
+        pom = czywkole();
+        if (pom == 1) wkole++;
+    }
+    double przyblizenie_pi = 4.0 * ((double)wkole / N);
+
+    printf("--- Symulacja Monte Carlo ---\n");
+    printf("Całkowita liczba losowań (N): %d\n", N);
+    printf("Liczba punktów w ćwiartce koła: %d\n", wkole);
+    printf("Przybliżona wartość PI: %.5lf\n", przyblizenie_pi);
+
+    return przyblizenie_pi;
+}
